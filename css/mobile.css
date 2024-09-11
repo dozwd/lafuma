@@ -1,0 +1,208 @@
+/* 해상도가 0-767 */
+
+@media screen and ( max-width:767px ) {
+    /* cover */
+    .m_cover{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0,0.8);
+        z-index: 99;
+        display: none;
+    }
+    /* 모바일 메뉴 */
+    .m_menu_wrap{
+        /* 모바일 화면에서는 보이게 하기 display:block */
+        display: block;
+        width: calc(100% - 50px);
+        height: 100%;
+        background: #fff;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 100;
+    }
+    .m_menu_wrap h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #333;
+        padding:15px 0;
+    }
+    .m_menu_wrap h2 img{
+        width: 96px;
+    }
+    .m_menu_wrap .m_gnb>li{
+        border-bottom: 1px solid #CCC;
+        background: #EEE;
+    }
+    .m_menu_wrap .m_gnb>li>a{
+        text-align: center;
+        display: block;
+        color: #333;
+        font-family: "Noto Sans";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px; /* 162.5% */
+        padding:16px;
+    }
+    .m_menu_wrap .m_gnb>li>.depth2{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid red; */
+        flex-wrap: wrap;
+        
+    }
+    .m_menu_wrap .m_gnb>li>.depth2>li{
+        text-align: center;
+        width: 50%;
+        background: #fff;
+        border-bottom: 1px solid #CCC;
+        position: relative;
+        padding:16px;
+    }
+    .m_menu_wrap .m_gnb>li>.depth2>li>a{
+        color: #555;
+        font-family: "Noto Sans";
+        font-size: 14px;
+        font-weight: 300;
+        display: block;
+
+    }
+    .m_menu_wrap .m_gnb>li>.depth2>li + li::after{
+        content: '';
+        width: 1px;
+        height: 40px;
+        background: #CCC;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .m_menu_wrap .m_gnb>li>.depth2>li>a>span{
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    .m_menu_wrap .m_gnb>li>.depth2>li>a>span img{
+        width: 14px;
+    }
+    header{
+        height:50px;
+    }
+    header .inner{
+        width: 100%;
+        height: 50px;
+    } 
+    header .inner .gnb{
+        display:none;
+    } 
+    header .inner h1 {
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%)
+    }   
+    header .inner .shop{
+        width: 21px;
+        height: 24px;
+        background: url("../images/m_mall 2.png") no-repeat;
+        background-size:21px 24px;
+        right: 16px;
+    }
+    .m_btn{
+        display:block;
+        width: 24px;
+        height: 24px;
+        background: url("../images/material-symbols_menu.png") no-repeat;
+        text-indent: -99999px;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /* 모바일에서 문단 안에 br 보이기 */
+    main .text p .show{
+        display:block;
+    }
+    main .text p .hidden{
+        display:none;
+    }
+
+    /* collection  */
+    main .collection .collect1,
+    main .collection .collect2,
+    main .collection .collect3{
+        width: 100%;
+    }
+    main .collection .collect4,
+    main .collection .collect5{
+        width: 50%;
+    }
+    main .list{
+        display:none;
+    }
+    .m_list{
+        display:block;
+        width: 100%;
+    }
+    .m_list li{
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+        background: #FFF;
+    }
+    .m_list li a{
+        display:block;
+        width: 100%;
+        padding: 12px 16px;
+        color: #777;
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+    }
+    .m_list li a::before{
+        content:'';
+        width: 12px;
+        height: 12px;
+        background: url("../images/grommet-icons_form-next.png") no-repeat;
+        background-size: 12px;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        background:#EEE;
+    }
+    footer .util{
+        display:none;
+    }
+    footer .util2_wrap .f_mark{
+        display:none;
+    }
+    footer .util2_wrap{
+        right: 50%;
+        top: 50%;
+        right: 0;
+        transform: translate(-150px,-50%);
+        /* transform: translate(-100%,-50%); */
+        /* border:1px solid red; */
+    }
+    footer .util_wrap p{
+        text-align: center;
+        /* border:1px solid red; */
+        margin-top:48px;
+    }
+    footer .util_wrap{
+        width: 100%;
+        /* border:1px solid blue; */
+    }
+
+
+
+    
+
+}
